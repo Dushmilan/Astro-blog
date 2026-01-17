@@ -1,7 +1,20 @@
 ---
 import Navigation from "./Navigation.astro";
 import Menu from "./Menu.astro";
+import ThemeIcon from "./ThemeIcon.astro";
 ---
+
+
+
+<header>
+<nav>
+<div>
+    <ThemeIcon />
+    <Menu />
+</div>
+    <Navigation />
+</nav>
+</header>
 
 <style>
 header {
@@ -12,9 +25,8 @@ header {
     background-color: #4c1d95;
     color: white;
 }
+div{
+    display: flex;
+    justify-content: space-between;
+}
 </style>
-
-<header>
-    <Menu />
-    <Navigation />
-</header>
